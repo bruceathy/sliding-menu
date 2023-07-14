@@ -129,10 +129,40 @@ button:focus {
   animation-duration: var(--modal-duration);
 }
 
-/* below is the background of the modal so finish the css for the modal above */
+.modal-header {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 15px;
+}
+
+.modal-header h3 {
+  margin: 0;
+}
+
+.close-btn {
+  background: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 15px;
+}
+
+.modal-content {
+  padding: 15px;
+}
+
+.modal-form div {
+  margin: 10px 0;
+}
+
+.modal-form .form-input {
+  padding: 8px;
+  width: 300px;
+}
+
 .modal-container {
   background-color: rgba(0, 0, 0, 0.6);
-  /* display: none; */
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -142,4 +172,14 @@ button:focus {
 
 .modal-container.show-modal {
   display: block;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
