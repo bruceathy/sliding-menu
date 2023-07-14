@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+:root {
+  --modal-duration: 1s;
+  --primary-color: #775753;
+  --secondary-color: #dec2c0;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  transition: transform 0.3s ease;
+  text-wrap: balance;
+  margin: 0;
+}
+
+body.show-nav {
+  transform: translateX(200px);
+}
+
+nav {
+  background-color: var(--primary-color);
+  border-right: 3px solid #c8c8c82f;
+  position: fixed;
+  color: #fff;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 200px;
+  z-index: 10;
+  transform: translateX(-100%);
+}
+
+nav .logo {
+  padding: 30px 0;
+  text-align: center;
+}
+
+nav .logo img {
+  border-radius: 50%;
+  height: 20vh;
+}
+
+nav ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+nav ul li {
+  border-bottom: 3px solid #c8c8c82f;
+  padding: 15px;
+}
+
+nav ul li:first-of-type {
+  border-top: 3px solid #c8c8c82f;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+header {
+  background-image: linear-gradient(45deg, #775753 21%, #402c2a 97%);
+  color: #fff;
+  position: relative;
+  padding: 40px 15px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 50px;
+}
+
+header p {
+  margin: 30px 0;
+  font-size: 20px;
+}
+
+button,
+input[type="submit"] {
+  background-color: var(--secondary-color);
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 8px 12px;
+}
+
+button:focus {
+  outline: none;
+}
+
+.toggle {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.cta-btn {
+  padding: 12px 30px;
+  font-size: 20px;
+}
+
+.container {
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.modal {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  width: 400px;
+  animation-name: modalopen;
+  animation-duration: var(--modal-duration);
+}
+
+/* below is the background of the modal so finish the css for the modal above */
+.modal-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  /* display: none; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modal-container.show-modal {
+  display: block;
+}

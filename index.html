@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Just A Landing Page | Home</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="logo">
+        <img
+          src="https://randomuser.me/api/portraits/women/63.jpg"
+          alt="profile pic"
+        />
+      </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- main content -->
+    <header>
+      <button id="toggle" class="toggle">
+        <i class="fa fa-bars fa-2x"></i>
+      </button>
+
+      <h1>Hello, Hi There, Here I Am</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+      <button class="cta-btn" id="open">Contact Me</button>
+    </header>
+
+    <main class="container">
+      <h2>Hello Ah Gain,</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga soluta
+        quo placeat tempora similique sequi qui nostrum doloremque, consequatur
+        mollitia suscipit est natus molestiae beatae fugiat facere molestias
+        numquam unde?
+      </p>
+
+      <h2>Hi There Ah Gain,</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia qui
+        nihil quisquam, modi, pariatur a error, adipisci quidem atque
+        exercitationem culpa inventore omnis. Quisquam architecto velit
+        quibusdam porro maxime est facere consequatur laborum in, aliquid a
+        voluptatem expedita molestiae eum reiciendis rerum, dolorum quam
+        molestias similique facilis temporibus, ullam provident?
+      </p>
+
+      <h2>Here I Am, Once Ah Gain</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus soluta
+        quam harum quae atque aliquid deleniti sit accusamus omnis natus.
+      </p>
+    </main>
+
+    <!-- contact me modal -->
+    <div class="modal-container" id="modal">
+      <div class="modal">
+        <button class="close-btn" id="close">
+          <i class="fa fa-times"></i>
+        </button>
+        <div class="modal-header">
+          <h3>Contact Me</h3>
+        </div>
+        <div class="modal-content">
+          <form class="modal-form">
+            <div>
+              <input type="text" placeholder="First Name" class="form-input" />
+            </div>
+            <div>
+              <input type="email" placeholder="Your Email" class="form-input" />
+            </div>
+            <div>
+              <textarea
+                name="message"
+                cols="30"
+                rows="10"
+                class="form-input"
+              ></textarea>
+            </div>
+            <input type="submit" value="Submit" class="submit-btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
